@@ -1,32 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
     height: 100vh;
-    background-color: #CACACA;
+    background-color: #f7f7f7;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
 `
 
-
 export const Content = styled.div`
-    background-color: #FFFFFF;
-    width: 50%;
+    width: 300px;
+    background-color: #464646;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #00000040;
+    padding: 10px;
 `
 
 export const Row = styled.div`
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    margin: 1px;
 `
-
-export const Column = styled.div`
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-`
-
